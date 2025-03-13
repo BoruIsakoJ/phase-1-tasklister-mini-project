@@ -3,11 +3,11 @@ html {
   width: 100%;
   font-family: "Titillium Web", sans-serif;
 }
-
+ 
 body {
   min-height: 100%;
   min-width: 100%;
-  background: linear-gradient(pink, violet);
+
 }
 
 button {
@@ -15,23 +15,74 @@ button {
 }
 
 #main-content {
-  position: relative;
+  width: 100%;
+  max-width: 565px;
+  margin: 100px auto;
+  box-shadow: 0 0 30px black;
+  background: white;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+  
+
+}
+form{
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
-  border: 1px solid #333;
-  background: rgba(255, 255, 255, 0.3);
-  padding: 15px 20px 18px 18px;
-  border-radius: 5px;
-  box-shadow: 2px 5px 5px #333;
+  justify-content: space-between;
+  background-color: #edeef0;
+}
+#new-task-description{
+  flex: 1;
+  width: 140%;
+  font-size: 16p;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+}
+input[type=submit]{
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: purple;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 30px;
 }
 
 #list {
-  margin: 10px;
-  border: 1px solid #333;
+  margin-top: 10px;
   background: rgba(255, 255, 255, 0.75);
-  padding: 15px 20px 18px 18px;
+  padding: 10px 5px 10px;
   border-radius: 5px;
-  box-shadow: 2px 5px 5px #333;
+  box-shadow: 0px 0px 5px #333;
+}
+ul li{
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+.liBtn{
+  padding: 10px 20px;
+  background-color: green;
+  border: 1px solid green;
+  margin-bottom: 15px;
+  font-size: 15px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: all .3s;
+}
+.liBtn:hover{
+  color: green;
+  background-color: white;
 }
